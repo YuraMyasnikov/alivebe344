@@ -22,14 +22,14 @@ $(document).ready(function () {
                     $('.psyhBlock .bottom__list .bottom__list__item:nth-child(4) .item--name--right').css({
                         transaction : ".3s ease",
                         fontSize : "1.1rem",
-                        fontWeight : "600"
+                        fontWeight : "600",
                     })
                 }
                 else{
                     $('.psyhBlock .bottom__list .bottom__list__item:nth-child(4) .item--name--right').css({
                         transaction : ".3s ease",
                         fontSize : "1rem",
-                        fontWeight : "normal"
+                        fontWeight : "normal",
                     })
                 }
                 if (val < 50) {
