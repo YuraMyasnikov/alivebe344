@@ -43,7 +43,7 @@
 
 .psyhBlock .top__list .top__list__item .item--name--right{
     width: 50%;
-    right: -50%;
+    right: -53%;
     transform: translateX(0);
     padding-left: 30px;
     font-size: 12px;
@@ -67,35 +67,38 @@
     color: var(--color-primary);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .clip{
-    width: 40px;
-    height: 45px;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 47px;
+    height: 40px;
+    clip-path: polygon(25% 5%, 75% 5%, 95% 50%, 75% 95%, 25% 95%, 5% 50%);
     background: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotateZ(90deg);
 
 }
 .psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .clip .clip--down{
-    width: 33px;
-    height: 38px;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 29px;
+    height: 33px;
+    clip-path: polygon(25% 5%, 75% 5%, 95% 50%, 75% 95%, 25% 95%, 5% 50%);
     background: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotateZ(0deg);
-}
-.psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .clip .clip--down .clip--down--simvol{
-    width: 100%;
-    height: 100%;
-    transform: rotateZ(90deg);
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .clip .clip--down--first{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+
 }
 
 .psyhBlock .top__list .top__list__item .top__list__item__wave{
@@ -115,133 +118,192 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 40px;
+    height: 25px;
     position: relative;
 }
 
+/* волна */
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(1) .wave--color-l{
     flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
     background: var(--color-dark);
-    clip-path: polygon(-10% 64%, 5% 63.5%, 10% 63%, 15% 62.5%, 20% 62%, 25% 61.5%, 30% 61%, 35% 60.5%, 40% 60%, 45% 59%, 50% 58.5%, 55% 58%, 60% 57.5%, 65% 57%, 70% 56%, 75% 55.5%, 80% 55%, 85% 54.5%, 90% 54%, 95% 53.5%, 100% 53%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 69.2%, 5% 68.8%, 10% 68.4%, 15% 68%, 20% 67.6%, 25% 67.2%, 30% 66.8%, 35% 66.4%, 40% 66%, 45% 65.5%, 50% 65%,
+    55% 64.5%, 60% 64%, 65% 63.5%, 70% 63%, 75% 62.5%, 80% 62%, 85% 61.5%, 90% 61%, 95% 60.5%, 100% 60%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
-
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(1) .wave--color-c{
     flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
     background: var(--color-dark);
-    clip-path: polygon(-10% 53%, 5% 052.5%, 10% 052.5%, 15% 52%, 20% 51.5%, 25% 51.5%, 30% 51%, 35% 51%, 40% 50.5%, 45% 50.5%, 50% 50%, 55% 50%, 60% 49.5%, 65% 49.5%, 70% 49%, 75% 49%, 80% 48.5%, 85% 48.5%, 90% 48%, 95% 48%, 100% 47.5%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 59.5%, 5% 59%, 10% 58.5%, 15% 58%, 20% 57.5%, 25% 57%, 30% 56.5%, 35% 56%, 40% 55.5%, 45% 55%, 50% 54%,
+    55% 53.5%, 60% 53%, 65% 52.5%, 70% 52%, 75% 51.5%, 80% 51%, 85% 50.5%, 90% 50%, 95% 49.5%, 100% 49%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
-
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(1) .wave--color-r{
     flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
     background: var(--color-dark);
-    clip-path: polygon(-10% 47.5%, 5% 47.5%, 10% 47%, 15% 46.5%, 20% 46%, 25% 45.5%, 30% 45%, 35% 44.5%, 40% 44.5%, 45% 44%, 50% 44%, 55% 43.5%, 60% 43%, 65% 42.5%, 70% 42%, 75% 41.5%, 80% 41%, 85% 40.5%, 90% 40%, 95% 39.5%, 100% 39%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 48.5%, 5% 48%, 10% 47%, 15% 46.5%, 20% 46%, 25% 45%, 30% 44.5%, 35% 44%, 40% 43.5%, 45% 43%, 50% 42%,
+    55% 41.5%, 60% 41%, 65% 40.5%, 70% 40%, 75% 39.5%, 80% 39%, 85% 38.5%, 90% 38%, 95% 37.5%, 100% 37%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(2) .wave--color-l{
     flex: 1;
+    border-right: 3px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
     background: var(--color-primary);
-    clip-path: polygon(-10% 39%, 5% 38.5%, 10% 38.5%, 15% 38%, 20% 37.5%, 25% 37%, 30% 37%, 35% 36.5%, 40% 36%, 45% 35.5%, 50% 35%, 55% 34%, 60% 33.5%, 65% 33%, 70% 32%, 75% 31.5%, 80% 31%, 85% 30%, 90% 29.5%, 95% 29%, 100% 28.5%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 35.5%, 5% 36%, 10% 35.5%, 15% 35%, 20% 34.5%, 25% 34%, 30% 33.5%, 35% 33%, 40% 32.5%, 45% 32%, 50% 31.5%,
+    55% 31%, 60% 30.5%, 65% 30%, 70% 29.5%, 75% 29%, 80% 28.5%, 85% 28%, 90% 27.5%, 95% 27%, 100% 26%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(2) .wave--color-c{
     flex: 1;
+    border-right: 2px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
     background: var(--color-primary);
-    clip-path: polygon(-10% 28%, 5% 27.5%, 10% 27%, 15% 26%, 20% 25%, 25% 24%, 30% 23.5%, 35% 23%, 40% 22.5%, 45% 22%, 50% 21%, 55% 20.5%, 60% 20%, 65% 19.5%, 70% 19%, 75% 18.5%, 80% 18%, 85% 17.5%, 90% 17%, 95% 16.5%, 100% 16%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 26%, 5% 25.5%, 10% 25%, 15% 24.5%, 20% 24%, 25% 23.5%, 30% 23%, 35% 22.5%, 40% 22%, 45% 21.5%, 50% 21%,
+    55% 20.5%, 60% 20%, 65% 19.5%, 70% 19%, 75% 18.5%, 80% 18%, 85% 17.5%, 90% 17%, 95% 16.5%, 100% 16%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(2) .wave--color-r{
     flex: 1;
+    border-right: 3px solid var(--color-primary);
+    border-left:3px solid var(--color-primary);
     background: var(--color-primary);
-    clip-path: polygon(-10% 16%, 5% 15%, 10% 14%, 15% 13.5%, 20% 13%, 25% 12.5%, 30% 12%, 35% 11%, 40% 10.5%, 45% 10%, 50% 9.5%, 55% 9%, 60% 8.5%, 65% 8%, 70% 7.5%, 75% 7%, 80% 6.5%, 85% 6%, 90% 5.5%, 95% 5%, 100% 5%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 15.5%, 5% 15.5%, 10% 15%, 15% 15%, 20% 14.5%, 25% 14.5%, 30% 14%, 35% 14%, 40% 13.5%, 45% 13.5%, 50% 13%,
+    55% 13%, 60% 12.5%, 65% 12.5%, 70% 12%, 75% 12%, 80% 11.5%, 85% 11.5%, 90% 11%, 95% 11%, 100% 10.5%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(3) .wave--color-l{
     background: var(--color-light);
     flex: 1;
-    clip-path: polygon(-10% 5%, 5% 5%, 10% 5%, 15% 5%, 20% 5%, 25% 4.5%, 30% 4.5%, 35% 4.5%, 40% 4.5%, 45% 4%, 50% 4%, 55% 4%, 60% 4%, 65% 3.5%, 70% 3.5%, 75% 3.5%, 80% 3.5%, 85% 3%, 90% 3%, 95% 3%, 100% 3%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    border-right: 3px solid var(--color-light);
+    border-left: 3px solid var(--color-light);
+    clip-path: polygon(
+    0% 10.5%, 5% 10%, 10% 10%, 15% 9.5%, 20% 9.5%, 25% 9%, 30% 9%, 35% 8.5%, 40% 8.5%, 45% 8%, 50% 8%,
+    55% 7.5%, 60% 7.5%, 65% 7%, 70% 7%, 75% 6.5%, 80% 6.5%, 85% 6%, 90% 6%, 95% 5.5%, 100% 5.5%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(3) .wave--color-c{
     background: var(--color-light);
     flex: 1;
-    clip-path: polygon(-10% 3%, 5% 3%, 10% 3%, 15% 2.5%, 20% 2.5%, 25% 2%, 30% 2%, 35% 2%, 40% 1.5%, 45% 1.5%, 50% 0%, 55% 1.5%, 60% 1.5%, 65% 2%, 70% 2%, 75% 2%, 80% 2.5%, 85% 2.5%, 90% 3%, 95% 3%, 100% 3%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    border-right: 3px solid var(--color-light);
+    border-left: 3px solid var(--color-light);
+    clip-path: polygon(
+    0% 5.5%, 5% 5%, 10% 4.5%, 15% 4%, 20% 3.5%, 25% 3%, 30% 2.5%, 35% 2%, 40% 1.5%, 45% 1%,
+    50% 0%,
+    55% 1%, 60% 1.5%, 65% 2%, 70% 2.5%, 75% 3%, 80% 3.5%, 85% 4%, 90% 4.5%, 95% 5%, 100% 5.5%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(3) .wave--color-r{
     background: var(--color-light);
     flex: 1;
-    clip-path: polygon(-10% 3%, 5% 3%, 10% 3%, 15% 3%, 20% 3.5%, 25% 3.5%, 30% 3.5%, 35% 3.5%, 40% 4%, 45% 4%, 50% 4%, 55% 4%, 60% 4.5%, 65% 4.5%, 70% 4.5%, 75% 4.5%, 80% 5%, 85% 5%, 90% 5%, 95% 5%, 100% 5%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    border-right: 3px solid var(--color-light);
+    border-left: 3px solid var(--color-light);
+    clip-path: polygon(
+    0% 5.5%, 5% 5.5%, 10% 6%, 15% 6%, 20% 6.5%, 25% 6.5%, 30% 7%, 35% 7%, 40% 7.5%, 45% 7.5%, 50% 8%,
+    55% 8%, 60% 8.5%, 65% 8.5%, 70% 9%, 75% 9%, 80% 9.5%, 85% 9.5%, 90% 10%, 95% 10%, 100% 10.5%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%)
+    0% 5%, 0% 100%);
 }
-
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(4) .wave--color-l{
     flex: 1;
-    clip-path: polygon(-10% 5%, 5% 5%, 10% 5.5%, 15% 6%, 20% 6.5%, 25% 7%, 30% 7.5%, 35% 8%, 40% 8.5%, 45% 9%, 50% 9.5%, 55% 10%, 60% 10.5%, 65% 11%, 70% 12%, 75% 12.5%, 80% 13%, 85% 13.5%, 90% 14%, 95% 15%, 100% 16%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    border-right: 3px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+    clip-path: polygon(
+    0% 10.5%, 5% 11%, 10% 11%, 15% 11.5%, 20% 11.5%, 25% 12%, 30% 12%, 35% 12.5%, 40% 12.5%, 45% 13%, 50% 13%,
+    55% 13.5%, 60% 13.5%, 65% 14%, 70% 14%, 75% 14.5%, 80% 14.5%, 85% 15%, 90% 15%, 95% 15.5%, 100% 15.5%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
     background: var(--color-primary);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(4) .wave--color-c{
     flex: 1;
-    clip-path: polygon(-10% 16%, 5% 16.5%, 10% 17%, 15% 17.5%, 20% 18%, 25% 18.5%, 30% 19%, 35% 19.5%, 40% 20%, 45% 20.5%, 50% 21%, 55% 22%, 60% 22.5%, 65% 23%, 70% 23.5%, 75% 24%, 80% 25%, 85% 26%, 90% 27%, 95% 27.5%, 100% 28%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    border-right: 3px solid var(--color-primary);
+    border-left:3px solid var(--color-primary);
+    clip-path: polygon(
+    0% 16%, 5% 16.5%, 10% 17%, 15% 17.5%, 20% 18%, 25% 18.5%, 30% 19%, 35% 19.5%, 40% 20%, 45% 20.5%, 50% 21%,
+    55% 21.5%, 60% 22%, 65% 22.5%, 70% 23%, 75% 23.5%, 80% 24%, 85% 24.5%, 90% 25%, 95% 25.5%, 100% 26%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
     background: var(--color-primary);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(4) .wave--color-r{
     flex: 1;
-    clip-path: polygon(-10% 28.5%, 5% 29%, 10% 29.5%, 15% 30%, 20% 31%, 25% 31.5%, 30% 32%, 35% 33%, 40% 33.5%, 45% 34%, 50% 35%, 55% 35.5%, 60% 36%, 65% 36.5%, 70% 37%, 75% 37%, 80% 37.5%, 85% 38%, 90% 38.5%, 95% 38.5%, 100% 39%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    border-right: 3px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+    clip-path: polygon(
+    0% 26.5%, 5% 27%, 10% 27.5%, 15% 28%, 20% 28.5%, 25% 29%, 30% 29.5%, 35% 30%, 40% 30.5%, 45% 31%, 50% 31.5%,
+    55% 32%, 60% 32.5%, 65% 33%, 70% 33.5%, 75% 34%, 80% 34.5%, 85% 35%, 90% 35.5%, 95% 36%, 100% 36.5%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
     background: var(--color-primary);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(5) .wave--color-l{
     flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
     background: var(--color-dark);
-    clip-path: polygon(-10% 39%, 5% 39.5%, 10% 40%, 15% 40.5%, 20% 41%, 25% 41.5%, 30% 42%, 35% 42.5%, 40% 43%, 45% 43.5%, 50% 44%, 55% 44%, 60% 44.5%, 65% 44.5%, 70% 45%, 75% 45.5%, 80% 46%, 85% 46.5%, 90% 47%, 95% 47.5%, 100% 47.5%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 37%, 5% 37.5%, 10% 38%, 15% 38.5%, 20% 39%, 25% 39.5%, 30% 40%, 35% 40.5%, 40% 41%, 45% 41.5%, 50% 42%,
+    55% 43%, 60% 43.5%, 65% 44%, 70% 44.5%, 75% 45%, 80% 46%, 85% 46.5%, 90% 47%, 95% 48%, 100% 48.5%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(5) .wave--color-c{
     flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
     background: var(--color-dark);
-    clip-path: polygon(-10% 47.5%, 5% 48%, 10% 48%, 15% 48.5%, 20% 48.5%, 25% 49%, 30% 49%, 35% 49.5%, 40% 49.5%, 45% 50%, 50% 50%, 55% 50.5%, 60% 50.5%, 65% 51%, 70% 51%, 75% 51.5%, 80% 51.5%, 85% 52%, 90% 52.5%, 95% 52.5%, 100% 53%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 49%, 5% 49.5%, 10% 50%, 15% 50.5%, 20% 51%, 25% 51.5%, 30% 52%, 35% 52.5%, 40% 53%, 45% 53.5%, 50% 54%,
+    55% 55%, 60% 55.5%, 65% 56%, 70% 56.5%, 75% 57%, 80% 57.5%, 85% 58%, 90% 58.5%, 95% 59%, 100% 59.5%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(5) .wave--color-r{
     flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
     background: var(--color-dark);
-    clip-path: polygon(-10% 53%, 5% 53.5%, 10% 54%, 15% 54.5%, 20% 55%, 25% 55.5%, 30% 56%, 35% 57%, 40% 57.5%, 45% 58%, 50% 58.5%, 55% 59%, 60% 60%, 65% 60.5%, 70% 61%, 75% 61.5%, 80% 62%, 85% 62.5%, 90% 63%, 95% 63.5%, 100% 64%,
-    100% 5%, 100% 10%, 100% 15%, 100% 20%, 100% 25%, 100% 30%, 100% 35%, 100% 40%, 100% 45%, 100% 50%, 100% 55%, 100% 60%, 100% 65%, 100% 70%, 100% 75%, 100% 80%, 100% 85%, 100% 90%, 100% 95%, 100% 100%,
+    clip-path: polygon(
+    0% 60%, 5% 60.5%, 10% 61%, 15% 61.5%, 20% 62%, 25% 62.5%, 30% 63%, 35% 63.5%, 40% 64%, 45% 64.5%, 50% 65%,
+    55% 65.5%, 60% 66%, 65% 66.4%, 70% 66.8%, 75% 67.2%, 80% 67.6%, 85% 68%, 90% 68.4%, 95% 68.8%, 100% 69.2%,
+    100% 5%, 100% 100%,
     100% 100%, 0% 100%,
-    0% 5%, 0% 10%, 0% 15%, 0% 20%, 0% 25%, 0% 30%, 0% 35%, 0% 40%, 0% 45%, 0% 50%, 0% 55%, 0% 60%, 0% 65%, 0% 70%, 0% 75%, 0% 80%, 0% 85%, 0% 90%, 0% 95%, 0% 100%);
+    0% 5%, 0% 100%);
 }
 
 .psyhBlock .top__list .top__list__item .top__list__item__wave--color .wave--color-l:after,
@@ -251,8 +313,8 @@
     background: inherit;
     width: 100%;
     height: 40px;
-    transform: translateX(-1px);
     position: absolute;
+    border: 4px solid inherit;
 }
 
 .psyhBlock .top__list .top__list__item .top__list__item__line{
@@ -442,6 +504,7 @@
     position:relative;
     width: 100%;
     display: flex;
+    margin: 5px 0;
 }
 .psyhBlock .bottom__list .bottom__list__item:last-child{
     margin-top: 20px;
@@ -526,6 +589,26 @@
     transform: translateY(-50%);
     z-index: 99;
 }
+.psyhBlock .wraper .line:before{
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #0000008a;
+    position: absolute;
+    left: 0;
+    transform: translate(-50%,-50% );
+}
+.psyhBlock .wraper .line:after{
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #0000008a;
+    position: absolute;
+    right: 0;
+    transform: translate(50%,-50% );
+}
 
 .psyhBlock .wraper .gray{
     position: absolute;
@@ -535,14 +618,14 @@
 }
 
 .psyhBlock .wraper .gray .gray--negative{
-    background: #eceaea;
+    background: #f3f3f3;
     width: 50%;
     height: 25px;
     position: absolute;
     left: 0;
 }
 .psyhBlock .wraper .gray .gray--positive{
-    background: #eceaea;
+    background: #f3f3f3;
     width: 50%;
     height: 25px;
     position: absolute;
@@ -557,38 +640,31 @@
     z-index: 99;
     transform: translateY(50%);
 }
-.psyhBlock .wraper .myslider #slider {
+.psyhBlock .wraper .myslider #slider,
+.psyhBlock .wraper .myslider #slider-5{
     background: transparent;
     border: none;
 }
-.psyhBlock .wraper .myslider #custom-handle {
+.psyhBlock .wraper .myslider #custom-handle,
+.psyhBlock .wraper .myslider #custom-handle-5 {
     width: 40px;
     height: 40px;
     top: 50%;
-    transform: translate(-25%,-20%);
+    transform: translate(-25%, -20%);
     margin-top: -.8em;
     text-align: center;
     line-height: 2.6em;
     clip-path: polygon(25% 5%, 75% 5%, 95% 50%, 75% 95%, 25% 95%, 5% 50%);
-    border: none;
-    outline: none;
-}
-.psyhBlock .wraper .myslider #custom-handle::after{
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: #000;
-
-    z-index: 99;
+    background: var(--color-primary);
 }
 
-.psyhBlock .wraper .myslider #custom-handle:active {
+
+.psyhBlock .wraper .myslider #custom-handle:active{
     background: red;
     height: 40px;
     width: 40px;
     border:none;
     outline: none;
-    border: 5px solid yellowgreen;
 }
 
 
