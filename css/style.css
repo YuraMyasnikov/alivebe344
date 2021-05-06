@@ -16,6 +16,8 @@
     display: flex;
     align-items: center;
     margin: 5px 0;
+    font-family: "SourceSansPro-Regular";
+    text-transform: uppercase;
 }
 .psyhBlock .top__list .top__list__item .top__list__item--name{
     position:absolute;
@@ -29,6 +31,7 @@
     align-items: center;
     justify-content: flex-end;
     color: var(--color-primary);
+    font-family: SourceSansPro-Regular;
 }
 .psyhBlock .top__list .top__list__item .item--name--left .arrow{
     height: 10px;
@@ -40,7 +43,7 @@
 
 .psyhBlock .top__list .top__list__item .item--name--right{
     width: 50%;
-    right: -50%;
+    right: -53%;
     transform: translateX(0);
     padding-left: 30px;
     font-size: 12px;
@@ -64,35 +67,38 @@
     color: var(--color-primary);
 }
 .psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .clip{
-    width: 40px;
+    width: 47px;
     height: 40px;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(25% 5%, 75% 5%, 95% 50%, 75% 95%, 25% 95%, 5% 50%);
     background: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotateZ(90deg);
 
 }
 .psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .clip .clip--down{
-    width: 33px;
+    width: 29px;
     height: 33px;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(25% 5%, 75% 5%, 95% 50%, 75% 95%, 25% 95%, 5% 50%);
     background: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotateZ(0deg);
-}
-.psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .clip .clip--down .clip--down--simvol{
-    width: 100%;
-    height: 100%;
-    transform: rotateZ(90deg);
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .clip .clip--down--first{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+
 }
 
 .psyhBlock .top__list .top__list__item .top__list__item__wave{
@@ -105,41 +111,212 @@
     width: 100%;
     height: 5px;
     position: relative;
+    margin: 0;
 }
 
-.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(1){
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+/* волна */
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(1) .wave--color-l{
+    flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
     background: var(--color-dark);
-    height: 8px;
-    border-top-left-radius: 140px 6px;
+    clip-path: polygon(
+    0% 69.2%, 5% 68.8%, 10% 68.4%, 15% 68%, 20% 67.6%, 25% 67.2%, 30% 66.8%, 35% 66.4%, 40% 66%, 45% 65.5%, 50% 65%,
+    55% 64.5%, 60% 64%, 65% 63.5%, 70% 63%, 75% 62.5%, 80% 62%, 85% 61.5%, 90% 61%, 95% 60.5%, 100% 60%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
 }
-.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(5){
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(1) .wave--color-c{
+    flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
     background: var(--color-dark);
-    height: 8px;
-    border-top-right-radius: 140px 6px;
+    clip-path: polygon(
+    0% 59.5%, 5% 59%, 10% 58.5%, 15% 58%, 20% 57.5%, 25% 57%, 30% 56.5%, 35% 56%, 40% 55.5%, 45% 55%, 50% 54%,
+    55% 53.5%, 60% 53%, 65% 52.5%, 70% 52%, 75% 51.5%, 80% 51%, 85% 50.5%, 90% 50%, 95% 49.5%, 100% 49%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
 }
-.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(2){
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(1) .wave--color-r{
+    flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
+    background: var(--color-dark);
+    clip-path: polygon(
+    0% 48.5%, 5% 48%, 10% 47%, 15% 46.5%, 20% 46%, 25% 45%, 30% 44.5%, 35% 44%, 40% 43.5%, 45% 43%, 50% 42%,
+    55% 41.5%, 60% 41%, 65% 40.5%, 70% 40%, 75% 39.5%, 80% 39%, 85% 38.5%, 90% 38%, 95% 37.5%, 100% 37%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+}
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(2) .wave--color-l{
+    flex: 1;
+    border-right: 3px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
     background: var(--color-primary);
-    height: 16px;
-    border-top-right-radius: 1px;
-    border-top-left-radius: 150% 93%;
+    clip-path: polygon(
+    0% 35.5%, 5% 36%, 10% 35.5%, 15% 35%, 20% 34.5%, 25% 34%, 30% 33.5%, 35% 33%, 40% 32.5%, 45% 32%, 50% 31.5%,
+    55% 31%, 60% 30.5%, 65% 30%, 70% 29.5%, 75% 29%, 80% 28.5%, 85% 28%, 90% 27.5%, 95% 27%, 100% 26%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
 }
-.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(4){
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(2) .wave--color-c{
+    flex: 1;
+    border-right: 2px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
     background: var(--color-primary);
-    height: 16px;
-    border-top-left-radius: 1px;
-    border-top-right-radius: 150% 93%
+    clip-path: polygon(
+    0% 26%, 5% 25.5%, 10% 25%, 15% 24.5%, 20% 24%, 25% 23.5%, 30% 23%, 35% 22.5%, 40% 22%, 45% 21.5%, 50% 21%,
+    55% 20.5%, 60% 20%, 65% 19.5%, 70% 19%, 75% 18.5%, 80% 18%, 85% 17.5%, 90% 17%, 95% 16.5%, 100% 16%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
 }
-.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(3){
-    background: var(--color-light);;
-    height: 22px;
-    border-top-left-radius: 150px 100%;
-    border-top-right-radius: 150px 100%;
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(2) .wave--color-r{
+    flex: 1;
+    border-right: 3px solid var(--color-primary);
+    border-left:3px solid var(--color-primary);
+    background: var(--color-primary);
+    clip-path: polygon(
+    0% 15.5%, 5% 15.5%, 10% 15%, 15% 15%, 20% 14.5%, 25% 14.5%, 30% 14%, 35% 14%, 40% 13.5%, 45% 13.5%, 50% 13%,
+    55% 13%, 60% 12.5%, 65% 12.5%, 70% 12%, 75% 12%, 80% 11.5%, 85% 11.5%, 90% 11%, 95% 11%, 100% 10.5%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
 }
-.psyhBlock .top__list .top__list__item .top__list__item__block .top__list__item__block--item .top__list__item__block--item--image{
-    width: 30px;
-    height: 30px;
-    fill: #0d5aa7;
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(3) .wave--color-l{
+    background: var(--color-light);
+    flex: 1;
+    border-right: 3px solid var(--color-light);
+    border-left: 3px solid var(--color-light);
+    clip-path: polygon(
+    0% 10.5%, 5% 10%, 10% 10%, 15% 9.5%, 20% 9.5%, 25% 9%, 30% 9%, 35% 8.5%, 40% 8.5%, 45% 8%, 50% 8%,
+    55% 7.5%, 60% 7.5%, 65% 7%, 70% 7%, 75% 6.5%, 80% 6.5%, 85% 6%, 90% 6%, 95% 5.5%, 100% 5.5%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
 }
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(3) .wave--color-c{
+    background: var(--color-light);
+    flex: 1;
+    border-right: 3px solid var(--color-light);
+    border-left: 3px solid var(--color-light);
+    clip-path: polygon(
+    0% 5.5%, 5% 5%, 10% 4.5%, 15% 4%, 20% 3.5%, 25% 3%, 30% 2.5%, 35% 2%, 40% 1.5%, 45% 1%,
+    50% 0%,
+    55% 1%, 60% 1.5%, 65% 2%, 70% 2.5%, 75% 3%, 80% 3.5%, 85% 4%, 90% 4.5%, 95% 5%, 100% 5.5%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+
+}
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(3) .wave--color-r{
+    background: var(--color-light);
+    flex: 1;
+    border-right: 3px solid var(--color-light);
+    border-left: 3px solid var(--color-light);
+    clip-path: polygon(
+    0% 5.5%, 5% 5.5%, 10% 6%, 15% 6%, 20% 6.5%, 25% 6.5%, 30% 7%, 35% 7%, 40% 7.5%, 45% 7.5%, 50% 8%,
+    55% 8%, 60% 8.5%, 65% 8.5%, 70% 9%, 75% 9%, 80% 9.5%, 85% 9.5%, 90% 10%, 95% 10%, 100% 10.5%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+}
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(4) .wave--color-l{
+    flex: 1;
+    border-right: 3px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+    clip-path: polygon(
+    0% 10.5%, 5% 11%, 10% 11%, 15% 11.5%, 20% 11.5%, 25% 12%, 30% 12%, 35% 12.5%, 40% 12.5%, 45% 13%, 50% 13%,
+    55% 13.5%, 60% 13.5%, 65% 14%, 70% 14%, 75% 14.5%, 80% 14.5%, 85% 15%, 90% 15%, 95% 15.5%, 100% 15.5%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+    background: var(--color-primary);
+}
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(4) .wave--color-c{
+    flex: 1;
+    border-right: 3px solid var(--color-primary);
+    border-left:3px solid var(--color-primary);
+    clip-path: polygon(
+    0% 16%, 5% 16.5%, 10% 17%, 15% 17.5%, 20% 18%, 25% 18.5%, 30% 19%, 35% 19.5%, 40% 20%, 45% 20.5%, 50% 21%,
+    55% 21.5%, 60% 22%, 65% 22.5%, 70% 23%, 75% 23.5%, 80% 24%, 85% 24.5%, 90% 25%, 95% 25.5%, 100% 26%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+    background: var(--color-primary);
+}
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(4) .wave--color-r{
+    flex: 1;
+    border-right: 3px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+    clip-path: polygon(
+    0% 26.5%, 5% 27%, 10% 27.5%, 15% 28%, 20% 28.5%, 25% 29%, 30% 29.5%, 35% 30%, 40% 30.5%, 45% 31%, 50% 31.5%,
+    55% 32%, 60% 32.5%, 65% 33%, 70% 33.5%, 75% 34%, 80% 34.5%, 85% 35%, 90% 35.5%, 95% 36%, 100% 36.5%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+    background: var(--color-primary);
+}
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(5) .wave--color-l{
+    flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
+    background: var(--color-dark);
+    clip-path: polygon(
+    0% 37%, 5% 37.5%, 10% 38%, 15% 38.5%, 20% 39%, 25% 39.5%, 30% 40%, 35% 40.5%, 40% 41%, 45% 41.5%, 50% 42%,
+    55% 43%, 60% 43.5%, 65% 44%, 70% 44.5%, 75% 45%, 80% 46%, 85% 46.5%, 90% 47%, 95% 48%, 100% 48.5%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+}
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(5) .wave--color-c{
+    flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
+    background: var(--color-dark);
+    clip-path: polygon(
+    0% 49%, 5% 49.5%, 10% 50%, 15% 50.5%, 20% 51%, 25% 51.5%, 30% 52%, 35% 52.5%, 40% 53%, 45% 53.5%, 50% 54%,
+    55% 55%, 60% 55.5%, 65% 56%, 70% 56.5%, 75% 57%, 80% 57.5%, 85% 58%, 90% 58.5%, 95% 59%, 100% 59.5%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+}
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color:nth-child(5) .wave--color-r{
+    flex: 1;
+    border-right: 3px solid var(--color-dark);
+    border-left: 3px solid var(--color-dark);
+    background: var(--color-dark);
+    clip-path: polygon(
+    0% 60%, 5% 60.5%, 10% 61%, 15% 61.5%, 20% 62%, 25% 62.5%, 30% 63%, 35% 63.5%, 40% 64%, 45% 64.5%, 50% 65%,
+    55% 65.5%, 60% 66%, 65% 66.4%, 70% 66.8%, 75% 67.2%, 80% 67.6%, 85% 68%, 90% 68.4%, 95% 68.8%, 100% 69.2%,
+    100% 5%, 100% 100%,
+    100% 100%, 0% 100%,
+    0% 5%, 0% 100%);
+}
+
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color .wave--color-l:after,
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color .wave--color-c:after,
+.psyhBlock .top__list .top__list__item .top__list__item__wave--color .wave--color-r:after{
+    content: "";
+    background: inherit;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    border: 4px solid inherit;
+}
+
 .psyhBlock .top__list .top__list__item .top__list__item__line{
     display: flex;
     justify-content: space-between;
@@ -327,6 +504,7 @@
     position:relative;
     width: 100%;
     display: flex;
+    margin: 5px 0;
 }
 .psyhBlock .bottom__list .bottom__list__item:last-child{
     margin-top: 20px;
@@ -344,16 +522,21 @@
 
 .psyhBlock .bottom__list .bottom__list__item .item--name--left{
     width: 50%;
-    left: -50%;
+    left: -53%;
+    top: 2px;
     transform: translateX(0);
     text-align: right;
     padding-right: 30px;
+    font-family: "SourceSansPro-Regular";
+    text-transform: uppercase;
 }
 .psyhBlock .bottom__list .bottom__list__item .item--name--right{
     width: 50%;
-    right: -50%;
+    right: -53%;
     transform: translateX(0);
     padding-left: 30px;
+    font-family: "SourceSansPro-Regular";
+    text-transform: uppercase;
 
 }
 .psyhBlock .bottom__list .bottom__list__item .bottom__list__item__block{
@@ -364,12 +547,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 40px;
+    height: 25px;
     margin-bottom: 10px;
-    border: 1px solid black;
 }
 .psyhBlock .wraper .color{
-    height: 40px;
+    height: 25px;
     width: 98%;
     display: flex;
     justify-content: space-between;
@@ -379,7 +561,7 @@
 .psyhBlock .wraper .color .color--negative3{
     background: var(--color-dark);
     width: 100%;
-    height: 40px;
+    height: 25px;
 }
 
 .psyhBlock .wraper .color .color--positive2,
@@ -407,25 +589,45 @@
     transform: translateY(-50%);
     z-index: 99;
 }
+.psyhBlock .wraper .line:before{
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #0000008a;
+    position: absolute;
+    left: 0;
+    transform: translate(-50%,-50% );
+}
+.psyhBlock .wraper .line:after{
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: #0000008a;
+    position: absolute;
+    right: 0;
+    transform: translate(50%,-50% );
+}
 
 .psyhBlock .wraper .gray{
     position: absolute;
     width: 98%;
-    height: 40px;
+    height: 25px;
     overflow: hidden;
 }
 
 .psyhBlock .wraper .gray .gray--negative{
-    background: #eceaea;
+    background: #f3f3f3;
     width: 50%;
-    height: 40px;
+    height: 25px;
     position: absolute;
     left: 0;
 }
 .psyhBlock .wraper .gray .gray--positive{
-    background: #eceaea;
+    background: #f3f3f3;
     width: 50%;
-    height: 40px;
+    height: 25px;
     position: absolute;
     right: 0;
 }
@@ -438,33 +640,29 @@
     z-index: 99;
     transform: translateY(50%);
 }
-.psyhBlock .wraper .myslider #slider {
+.psyhBlock .wraper .myslider #slider,
+.psyhBlock .wraper .myslider #slider-5{
     background: transparent;
     border: none;
 }
-.psyhBlock .wraper .myslider #custom-handle {
+.psyhBlock .wraper .myslider #custom-handle,
+.psyhBlock .wraper .myslider #custom-handle-5 {
     width: 40px;
     height: 40px;
     top: 50%;
-    transform: translate(-25%,-20%);
+    transform: translate(-25%, -20%);
     margin-top: -.8em;
     text-align: center;
     line-height: 2.6em;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    border: none;
-    outline: none;
-}
-.psyhBlock .wraper .myslider #custom-handle::after{
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: #000;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    z-index: 99;
+    clip-path: polygon(25% 5%, 75% 5%, 95% 50%, 75% 95%, 25% 95%, 5% 50%);
+    background: var(--color-primary);
 }
 
-.psyhBlock .wraper .myslider #custom-handle:active {
+
+.psyhBlock .wraper .myslider #custom-handle:active{
     background: red;
+    height: 40px;
+    width: 40px;
     border:none;
     outline: none;
 }
