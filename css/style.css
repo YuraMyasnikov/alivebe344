@@ -6,10 +6,15 @@
     justify-content: space-between;
     --color-dark: #509cac;
     --color-primary: #78b1c4;
-    --color-light:#b2d6e2;
+    --color-info: rgba(135, 179, 194, 0.99);
+    --color-light: #b2d6e2;
+    position: relative;
 }
 .psyhBlock .top{}
-.psyhBlock .top__list{}
+.psyhBlock .top__list{
+    position: relative;
+    margin-bottom: 40px;
+}
 .psyhBlock .top__list .top__list__item{
     position:relative;
     width: 100%;
@@ -491,14 +496,31 @@
     right: 0;
 }*/
 
-.psyhBlock .top__line__list{}
-.psyhBlock .top__line__list .top__line__list--item{}
+.psyhBlock .vertikai__list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 5%;
+    width: 94%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.psyhBlock .vertikai__list .vertikai__list--item{
+    list-style-type: none;
+    border-left: 1px solid rgba(178, 214, 226, 0.20);
+    flex: 1;
+}
+.psyhBlock .vertikai__list .vertikai__list--item:nth-child(1){
+    border-left: none;
+}
 
 
 .psyhBlock .bottom{
 }
 .psyhBlock .bottom__list{
-    margin-top: 10px;
+    margin-top: 10px;position: relative;
 }
 .psyhBlock .bottom__list .bottom__list__item{
     position:relative;
@@ -509,6 +531,7 @@
 .psyhBlock .bottom__list .bottom__list__item:last-child{
     margin-top: 20px;
 }
+
 /*.psyhBlock .bottom__list .bottom__list__item:hover .item--name--left,
 .psyhBlock .bottom__list .bottom__list__item:hover .item--name--right{
     transition: .3s ease;
@@ -521,176 +544,184 @@
 }
 
 .psyhBlock .bottom__list .bottom__list__item .item--name--left{
-    width: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     left: -53%;
     top: 2px;
-    transform: translateX(0);
-    text-align: right;
-    padding-right: 30px;
     font-family: "SourceSansPro-Regular";
     text-transform: uppercase;
+    height: 30px;
+    position: absolute;
+    left: -35%;
+    cursor: help;
 }
 .psyhBlock .bottom__list .bottom__list__item .item--name--right{
-    width: 50%;
-    right: -53%;
+    width: 30%;
+    left: 104%;
     transform: translateX(0);
-    padding-left: 30px;
     font-family: "SourceSansPro-Regular";
     text-transform: uppercase;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: help;
 
 }
 .psyhBlock .bottom__list .bottom__list__item .bottom__list__item__block{
-    width: 100%;
+width: 100%;
 }
 .psyhBlock .wraper{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 25px;
-    margin-bottom: 10px;
+position: relative;
+display: flex;
+justify-content: center;
+width: 100%;
+height: 25px;
+margin-bottom: 10px;
 }
 .psyhBlock .wraper .color{
-    height: 25px;
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
+height: 25px;
+width: 98%;
+display: flex;
+justify-content: space-between;
+position: absolute;
 }
 .psyhBlock .wraper .color .color--positive3,
 .psyhBlock .wraper .color .color--negative3{
-    background: var(--color-dark);
-    width: 100%;
-    height: 25px;
+background: var(--color-dark);
+width: 100%;
+height: 25px;
 }
 
 .psyhBlock .wraper .color .color--positive2,
 .psyhBlock .wraper .color .color--negative2{
-    background: var(--color-primary);
-    width: 100%;
+background: var(--color-primary);
+width: 100%;
 }
 
 .psyhBlock .wraper .color .double{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+display: flex;
+justify-content: space-between;
+width: 100%;
 }
 .psyhBlock .wraper .color .color--positive1,
 .psyhBlock .wraper .color .color--negative1{
-    width: 100%;
-    background: var(--color-light);
+width: 100%;
+background: var(--color-light);
 }
 
 .psyhBlock .wraper .line{
-    position: absolute;
-    width: 100%;
-    border: 1px solid #0000008a;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 99;
+position: absolute;
+width: 100%;
+border: 1px solid #0000008a;
+top: 50%;
+transform: translateY(-50%);
+z-index: 99;
 }
 .psyhBlock .wraper .line:before{
-    content: "";
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    background: #0000008a;
-    position: absolute;
-    left: 0;
-    transform: translate(-50%,-50% );
+content: "";
+height: 5px;
+width: 5px;
+border-radius: 50%;
+background: #0000008a;
+position: absolute;
+left: 0;
+transform: translate(-50%,-50% );
 }
 .psyhBlock .wraper .line:after{
-    content: "";
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    background: #0000008a;
-    position: absolute;
-    right: 0;
-    transform: translate(50%,-50% );
+content: "";
+height: 5px;
+width: 5px;
+border-radius: 50%;
+background: #0000008a;
+position: absolute;
+right: 0;
+transform: translate(50%,-50% );
 }
 
 .psyhBlock .wraper .gray{
-    position: absolute;
-    width: 98%;
-    height: 25px;
-    overflow: hidden;
+position: absolute;
+width: 98%;
+height: 25px;
+overflow: hidden;
 }
 
 .psyhBlock .wraper .gray .gray--negative{
-    background: #f3f3f3;
-    width: 50%;
-    height: 25px;
-    position: absolute;
-    left: 0;
+background: #f3f3f3;
+width: 50%;
+height: 25px;
+position: absolute;
+left: 0;
 }
 .psyhBlock .wraper .gray .gray--positive{
-    background: #f3f3f3;
-    width: 50%;
-    height: 25px;
-    position: absolute;
-    right: 0;
+background: #f3f3f3;
+width: 50%;
+height: 25px;
+position: absolute;
+right: 0;
 }
 
 .psyhBlock .wraper .myslider{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 50%;
-    z-index: 99;
-    transform: translateY(50%);
+width: 100%;
+height: auto;
+position: absolute;
+bottom: 50%;
+z-index: 99;
+transform: translateY(50%);
 }
 .psyhBlock .wraper .myslider #slider,
 .psyhBlock .wraper .myslider #slider-5{
-    background: transparent;
-    border: none;
+background: transparent;
+border: none;
 }
 .psyhBlock .wraper .myslider #custom-handle,
 .psyhBlock .wraper .myslider #custom-handle-5 {
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    transform: translate(-25%, -20%);
-    margin-top: -.8em;
-    text-align: center;
-    line-height: 2.6em;
-    clip-path: polygon(25% 5%, 75% 5%, 95% 50%, 75% 95%, 25% 95%, 5% 50%);
-    background: var(--color-primary);
+width: 40px;
+height: 40px;
+top: 50%;
+transform: translate(-25%, -20%);
+margin-top: -.8em;
+text-align: center;
+line-height: 2.6em;
+clip-path: polygon(25% 5%, 75% 5%, 95% 50%, 75% 95%, 25% 95%, 5% 50%);
+background: var(--color-primary);
 }
 
 
 .psyhBlock .wraper .myslider #custom-handle:active{
-    background: red;
-    height: 40px;
-    width: 40px;
-    border:none;
-    outline: none;
+background: red;
+height: 40px;
+width: 40px;
+border:none;
+outline: none;
 }
 
 
-.psyhBlock .bottom__list .bottom__list__item .bottom__list__item__block input[type=range] {
-    display: block;
-    width: 100%;
-    appearance: none;
-    background: none;
-    border: none;
-    position: relative;
-    position: relative;
+/*.psyhBlock .bottom__list .bottom__list__item .bottom__list__item__block input[type=range] {
+display: block;
+width: 100%;
+appearance: none;
+background: none;
+border: none;
+position: relative;
+position: relative;
 }
 .psyhBlock  input::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-bottom:1px solid #c1c1c1;
-    bottom: 50%;
-    left: 0;
+content: '';
+width: 100%;
+height: 100%;
+position: absolute;
+border-bottom:1px solid #c1c1c1;
+bottom: 50%;
+left: 0;
 }
 .psyhBlock  input[type='range']::-webkit-slider-thumb::after {
-    content: 'cvbncvnb';
-    width: 100%;
-    height: 100%;
-}
+content: 'cvbncvnb';
+width: 100%;
+height: 100%;
+}*/
+
 .psyhBlock .bottom__list .bottom__list__item .bottom__list__item__block input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     cursor: pointer;
@@ -712,3 +743,65 @@
     height: 5px;
     position: relative;
 }
+.psyhBlock .info-r{
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    transform: scale(0.3,0.3) ;
+    background: var(--color-info);
+    width: 65%;
+    min-height: 100px;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 10px;
+    transition: .3s ease;
+    display: none;
+}
+.psyhBlock .info-l{
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    transform: scale(0.3,0.3) ;
+    background: var(--color-info);
+    width: 65%;
+    min-height: 150px;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 10px;
+    transition: .3s ease;
+    display: none;
+}
+.psyhBlock .info__r1,
+.psyhBlock .info__r2,
+.psyhBlock .info__r3,
+.psyhBlock .info__r4,
+.psyhBlock .info__r5,
+.psyhBlock .info__r6,
+.psyhBlock .info__l1,
+.psyhBlock .info__l2,
+.psyhBlock .info__l3,
+.psyhBlock .info__l4,
+.psyhBlock .info__l5,
+.psyhBlock .info__l6{
+    display: none;
+}
+.psyhBlock .info-l .info-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid var(--color-info);
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -19px;
+
+}
+.psyhBlock .info-r .info-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid var(--color-info);
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: -19px;
+}
+
